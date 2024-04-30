@@ -45,7 +45,7 @@ do
     Console.WriteLine("Digite 0 para parar ou qualquer outro número para continuar.");
     opcao = int.Parse(Console.ReadLine());
 
-} while (opcao != 0 || index > 10);
+} while (opcao != 0 || index != 9);
 
 do
 {
