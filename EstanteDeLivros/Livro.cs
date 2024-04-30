@@ -55,35 +55,8 @@ public class Livro
     {
         this.QtdPagina = p;
     }
-    public Livro[] CriarEstante()
-    {
-        Livro[] estante = new Livro[10];
-        return estante;
-    }
-    public void GuardarLivro(Livro livro, Livro[] estante, int index)
-    {
-        estante[index] = livro;
-    }
 
-    public void ListarLivro(Livro[] estante, int index)
-    {
-        if (estante[index].Nome != null)
-        {
-            Console.WriteLine($"Nome do Livro: {estante[index].Nome}");
-            Console.WriteLine("Nome dos autores:");  
-            for (int j = 0; j < Autores.Length; j++)
-                Console.WriteLine($"{Autores[j]}");
-            Console.WriteLine($"Data de lancamento: {estante[index].DataLancamento}");
-            Console.WriteLine($"Editora: {estante[index].Editora}");
-            Console.WriteLine($"Edição: {estante[index].Edicao}");
-            Console.WriteLine($"IBSM: {estante[index].Ibsm}");
-            Console.WriteLine($"Quantidade de páginas: {estante[index].QtdPagina}");
-        }
-    }
-    public void ListarTodosLivros(Livro[] estante, int index)
-    {
-        for (int i = 0; i < index; i++)
-            ListarLivro(estante, i);
-    }
+
+
 }
 
